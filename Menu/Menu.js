@@ -17,9 +17,25 @@ let menuItems = [
     <ul>
       {each menu item as a list item}
     </ul>
-  </div>
+    </div>
 
-  Pass the function an array as it's only argument.
+    Pass the function an array as it's only argument.
+  */
+ 
+  const menuBuilder = document.getElementById('header');
+
+  menuItems.forEach((e) => {
+    menuBuilder.appendChild(newMenu(e.items))
+  });
+
+  function createMenu
+
+ 
+ 
+ 
+ 
+  /*
+
 
   Step 2: Iterate over the array creating a list item <li> element for each item in the array. 
   Add those items to the <ul>
