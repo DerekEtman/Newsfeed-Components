@@ -20,27 +20,30 @@ let menuItems = [
     </div>
 
     Pass the function an array as it's only argument.
-  */
+*/
+
 
 const menuBuilder = document.querySelector('.header');
+// console.log(menuBuilder);
 
-menuBuilder.appendChild(buildNewMenu(menuItems) );
+menuBuilder.appendChild(buildNewMenu(menuItems));
 
-function buildNewMenu(arr) {
+function buildNewMenu(menuArr) {
   const menu = document.createElement('div');
   const list = document.createElement('ul');
+  
   menu.appendChild(list);
 
-  arr.forEach((i) => {
+  menuArr.forEach((i) => {
     const li = document.createElement('li');
     li.textContent = i;
     list.appendChild(li);
-
   })
 
 
   //setting class name
   menu.classList.add('menu');
+  list.classList.add('ul');
 
   const menuBtn = document.querySelector('.menu-button');
 
