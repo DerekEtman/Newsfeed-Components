@@ -186,19 +186,19 @@ function createArticle(title, date, firstParagraph, secondParagraph, thirdParagr
 }
 
 
-function addAuthor(text) {
+// function addAuthor(text) {
 
 
-}
+// }
 
-let addAuthor = data.map((e) => {
-  let auth = document.createElement(e);
-  return auth;
-})
+// let addAuthor = data.map((e) => {
+//   let auth = document.createElement(e);
+//   return auth;
+// })
 
-addAuthor.forEach(component => {
-  parent.appendChild(component)
-})
+// addAuthor.forEach(component => {
+//   parent.appendChild(component)
+// })
 
 
 /*
